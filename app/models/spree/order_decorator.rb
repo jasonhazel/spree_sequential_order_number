@@ -8,6 +8,7 @@ Spree::Order.class_eval do
 
   def update_order_number
     self.number ||= self.id
+    save
   end
 
 end
